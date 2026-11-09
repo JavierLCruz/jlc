@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Electrónica</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+
+    /* --- Header / Hero --- */
+    header {
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+
+    header h1 { font-size: 2.2rem; margin-bottom: .5rem; }
+    header p  { color: #94a3b8; font-size: 1.1rem; }
+
+    /* --- Sección de cursos --- */
+    main {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #334155;
+      display: inline-block;
+      padding-bottom: .3rem;
+    }
+
+    .cursos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .curso {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: box-shadow .2s;
+    }
+
+    .curso:hover { box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+    .curso h3   { font-size: 1.1rem; margin-bottom: .5rem; color: #0f172a; }
+    .curso p    { font-size: .95rem; color: #475569; margin-bottom: 1rem; }
+
+    .curso .meta {
+      font-size: .85rem;
+      color: #64748b;
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* --- Contacto --- */
+    .contacto {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #0f172a;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    .contacto a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .85rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AC/DC Ingeniería en Electrónica</h1>
+    <p>Cursos prácticos desde lo básico hasta diseño de circuitos</p>
+  </header>
+
+  <main>
+    <h2>Cursos disponibles</h2>
+
+    <div class="cursos">
+      <div class="curso">
+        <h3>Programacion en Lenguaje C</h3>
+        <p>Fundamentos basicos de la programacion, programacion en SO linux y programacion de GUI.</p>
+        <div class="meta">
+          <span>⏱ 40 hs</span>
+          <span>📅 Inicio: Febrero 2027</span>
+        </div>
+      </div>
+
+      <div class="curso">
+        <h3>Microcontroladores con Arduino</h3>
+        <p>Programación en C, sensores, actuadores y proyectos de IoT básico.</p>
+        <div class="meta">
+          <span>⏱ 30 hs</span>
+          <span>📅 Inicio: Marzo 2027</span>
+        </div>
+      </div>
+
+      <div class="curso">
+        <h3>Inteligencia Artificial</h3>
+        <p>Del esquema al plan al desarrollo de agentes. Buenas prácticas de diseño e implementacion.</p>
+        <div class="meta">
+          <span>⏱ 25 hs</span>
+          <span>📅 Inicio: Abril</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto">
+      <p>¿Querés inscribirte? Escribinos a <a href="mailto:jlcruzunsj@gmail.com">jlcruzunsj@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 – Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>   
